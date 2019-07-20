@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+dom
+</title>
+<script>
+function create()
+{
+var para=document.createElement("li");
+var node=document.createTextNode("BTECH");
+para.appendChild(node);
+var element=document.getElementById("c");
+element.appendChild(para);
+}
+
+function insert()
+{
+var para=document.createElement("li");
+var node=document.createTextNode("hello world");
+para.appendChild(node);
+var element=document.getElementById("c");
+var child=document.getElementById("p1");
+element.insertBefore(para,child);
+}
+ 
+function remove()
+{
+var element=document.getElementById("c");
+var child=document.getElementById("p2");
+element.removeChild(child);
+}
+
+function replace()
+{
+var para=document.createElement("font")
+var child=document.createTextNode("ENGINEERING");
+para.appendChild(child);
+var element=document.getElementById("e");
+var node=document.getElementById("p3");
+element.replaceChild(child,node);
+}
+
+</script>
+</head>
+<body>
+
+<ol type="i" id="c">
+<li>civil</li>
+<li id="p1">mech</li>
+<li id="p2">CSE</li>
+
+<li id="e"><font id="p3">ECE</font></li>
+
+</ol>
+
+<form>
+<input type="button" value="create" onclick="create()">
+<input type="button" value="insert" onclick="insert()">
+<input type="button" value="remove" onclick="remove()">
+<input type="button" value="replace" onclick="replace()">
+</form>
+
+</body>
+</html>
