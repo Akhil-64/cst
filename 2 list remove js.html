@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>remove</title>
+<script>
+function remove()
+{
+var x=document.getElementById("a");
+var child=document.getElementById("cd");
+x.removeChild(child);
+var para=document.getElementById("b");
+para.appendChild(child);
+}
+
+function rem()
+{
+
+var x=document.getElementById("f").innerHTML;
+var para=document.createElement("li");
+var child=document.createTextNode(x);
+para.append(child);
+var element=document.getElementById("v");
+element.appendChild(para);
+
+}
+
+</script>
+<style>
+div
+{
+float:left;
+margin:10px 10px 10px 10px;
+}
+</style>
+</head>
+<body>
+<p>
+<div>
+<div>
+<ul>
+<li id="f">engineering</li>
+<li>cse</li>
+<li>civil</li>
+</ul>
+</div>
+<div>
+<ul id="v">
+<li>electrical</li>
+<li>dept</li>
+<li >fog</li>
+</ul>
+</div>
+</div>
+<form>
+<input type="button" value="click" onclick="rem()">
+</form>
+</p>
+
+
+<p>
+<div>
+<div>
+<ul id="a">
+<li id="cd">ECE</li>
+<li>cse</li>
+<li>civil</li>
+</ul>
+</div>
+<div>
+<ul>
+<li>electrical</li>
+<li>dept</li>
+<li id="b">fog</li>
+</ul>
+</div>
+</div>
+<form>
+<input type="button" value="click" onclick="remove()">
+</form>
+</p>
+
+
+
+</body>
+</html>
