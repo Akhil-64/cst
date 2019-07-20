@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>dom practice</title>
+<script>
+
+function display()
+{
+var x=[];
+var a=document.getElementById("a").value;
+var b=document.getElementById("b").value;
+var c=document.getElementById("c").value;
+var d=document.getElementById("d").value;
+x=[a,b,c,d];
+document.getElementById("disp").innerHTML=x;
+}
+
+function push()
+{
+var arr=[];
+var a=document.getElementById("a").value;
+var b=document.getElementById("b").value;
+var c=document.getElementById("c").value;
+var d=document.getElementById("d").value;
+var x=document.getElementById("f").value;
+arr=[a,b,c,d,x];
+document.getElementById("push").innerHTML=arr;
+}
+
+function pop()
+{
+var arr=[];
+var a=document.getElementById("a").value;
+var b=document.getElementById("b").value;
+var c=document.getElementById("c").value;
+var d=document.getElementById("d").value;
+arr=[a,b,c,d];
+arr.pop();
+document.getElementById("pop").innerHTML=arr;
+}
+
+function unshift()
+{
+var arr=[];
+var a=document.getElementById("a").value;
+var b=document.getElementById("b").value;
+var c=document.getElementById("c").value;
+var d=document.getElementById("d").value;
+var x=document.getElementById("f").value;
+
+arr=[a,b,c,d];
+arr.unshift(x);
+document.getElementById("unshift").innerHTML=arr;
+}
+
+function shift()
+{
+var arr=[];
+var a=document.getElementById("a").value;
+var b=document.getElementById("b").value;
+var c=document.getElementById("c").value;
+var d=document.getElementById("d").value;
+arr=[a,b,c,d];
+arr.shift();
+document.getElementById("shift").innerHTML=arr;
+}
+function sort()
+{
+var arr=[];
+var a=document.getElementById("a").value;
+var b=document.getElementById("b").value;
+var c=document.getElementById("c").value;
+var d=document.getElementById("d").value;
+arr=[a,b,c,d];
+arr.sort();
+document.getElementById("sort").innerHTML=arr;
+}
+
+function reverse()
+{
+var arr=[];
+var a=document.getElementById("a").value;
+var b=document.getElementById("b").value;
+var c=document.getElementById("c").value;
+var d=document.getElementById("d").value;
+arr=[a,b,c,d];
+arr.reverse();
+document.getElementById("reverse").innerHTML=arr;
+}
+</script>
+</head>
+<body>
+<form>
+<input type="text box" id="a"><br>
+<input type="text box" id="b"><br>
+<input type="text box" id="c"><br>
+<input type="text box" id="d"><br>
+<input type="text box" id="f"><br>
+
+<div id="cd">
+<p  id="disp"></p>
+<p id="push"></p>
+<p id="pop"></p>
+<p id="unshift"></p>
+<p id="shift"></p>
+<p id="sort"></p>
+<p id="reverse"></p>
+</div>
+
+<input type="button" value="display" onclick="display()">
+<input type="button" value="push" onclick="push()">
+<input type="button" value="pop" onclick="pop()">
+<input type="button" value="unshift" onclick="unshift()">
+<input type="button" value="shift" onclick="shift()">
+<input type="button" value="sort" onclick="sort()">
+<input type="button" value="reverse" onclick="reverse()">
+</form>
+</body>
+</html>
