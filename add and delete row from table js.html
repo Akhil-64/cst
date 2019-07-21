@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+table js 
+</title>
+
+<style>
+table,tr,td
+{
+border:20px outset red;
+border-collapse:collapse;
+padding:40px;
+margin:40px 20px 20px 40px;
+}
+form
+{
+margin:40px  120px;
+}
+</style>
+<script>
+
+function f1()
+{
+var para=document.createElement("td");
+var child=document.createTextNode(" ");
+para.appendChild(child);
+var element=document.getElementById("cd");
+element.appendChild(para);
+}
+
+function f2()
+{
+var element=document.getElementById("cd");
+var child=document.getElementById("a").innerHTML=" ";
+element.removeChild(child);
+}
+
+</script>
+</head>
+
+<body>
+
+<table id="cd">
+<tr id="a">
+<td ></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<form>
+<input type="button" value="add row" onclick="f1()" >
+<input type="button" value="delete row" onclick="f2()">
+</form>
+
+</body>
+</html>
