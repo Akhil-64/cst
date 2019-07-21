@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+12 b
+</title>
+<script>
+var d;
+function h()
+{
+d=new Date();
+var x=document.getElementById("cd").innerHTML=d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+}
+function t()
+{
+if(d.getHours()>12)
+{
+document.getElementById("fg").innerHTML=(d.getHours()-12)+":"+d.getMinutes()+":"+d.getSeconds();
+
+}
+}
+</script>
+</head>
+<body>
+<p id="cd"></p>
+<p id="fg"></p>
+<input type="button" value="24 format" onclick="h()">
+<input type="button" value="12 format" onclick="t()">
+</body>
+</html>
