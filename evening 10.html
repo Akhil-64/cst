@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+10
+</title>
+<script>
+var a;
+function cr()
+{
+a=window.open("","","width=100px,height=100px,");
+}
+function re()
+{
+a.resizeBy(50,50);
+a.focus();
+}
+function mo()
+{
+a.moveTo(300,0);
+a.focus();
+}
+</script>
+</head>
+<body>
+<input type="button" value="create" onclick="cr()">
+<input type="button" value="resize" onclick="re()">
+<input type="button" value="move" onclick="mo()">
+</body>
+</html>
