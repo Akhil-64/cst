@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>lp2p2</title>
+<style>
+.ak
+{
+float:right;
+margin:0 1200px 0 0;
+}
+</style>
+</head>
+<body>
+	<div>
+            <ul id="ol2">
+			<li>Red</li>
+			<li>Green</li>
+		</ul>
+	</div>
+    <div>
+         <ul id="ol1" class="ak">
+			<li id="l2">Blue</li>
+			<li id="l1">Yellow</li>
+         </ul>
+    </div>
+    <button onclick="fun()" onmousedown="fun2()">click</button>
+    <script>
+    	function fun()
+    	{
+    	var i=1;
+    	var element=document.getElementById("ol1");
+        var child=document.getElementById("l1");
+        var a=document.getElementById("l1").innerHTML;
+        var para=document.createElement("li");
+ 	    var node=document.createTextNode(a);
+ 	    para.appendChild(node);
+        element.removeChild(child);
+        var element1=document.getElementById("ol2");
+        element1.appendChild(para);
+        }
+        function fun2()
+    	{
+    	var element=document.getElementById("ol1");
+        var child=document.getElementById("l2");
+        var a=document.getElementById("l2").innerHTML;
+        var para=document.createElement("li");
+ 	    var node=document.createTextNode(a);
+ 	    para.appendChild(node);
+        element.removeChild(child);
+        var element1=document.getElementById("ol2");
+        element1.appendChild(para);
+        }
+    </script>
+</body>
+</html>
