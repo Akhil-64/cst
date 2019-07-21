@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+13 b
+</title>
+<style>
+.s
+{
+margin:10px 0 0 50px;
+
+}
+.f
+{
+margin:0px 0 0 10px;
+}
+.k
+{
+margin:20px 0 0 10px;
+}
+table
+{
+border:2px solid black;
+width:300px;
+height:200px;
+}
+
+
+</style>
+<script>
+function app()
+{
+var x=document.getElementById("a").innerHTML;
+var y=document.getElementById("b").innerHTML;
+
+var pa=document.createElement("li");
+var z=document.createTextNode(x);
+pa.appendChild(z);
+var el=document.getElementById("cf");
+el.appendChild(pa);
+
+var par=document.createElement("li");
+var p=document.createTextNode(y);
+par.appendChild(p);
+var ele=document.getElementById("cf");
+ele.appendChild(par);
+
+var para=document.createElement("li");
+var node=document.createTextNode("Water");
+para.appendChild(node);
+var element=document.getElementById("cf");
+element.appendChild(para);
+
+}
+</script>
+</head>
+<body>
+<table>
+<tr>
+<td>
+<p class="f">Before appending:</p>
+<ul>
+<li id="a">Coffee</li>
+<li id="b">Tea</li>
+</ul>
+<input type="button" value="Click Here" onclick="app()" class="s">
+<p  class="k">After appending:</p>
+<ul id="cf">
+</ul>
+</td></tr></table>
+</body>
+</html>
