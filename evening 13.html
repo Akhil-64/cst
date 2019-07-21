@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+13
+</title>
+<script>
+function rt()
+{
+var h=document.forms["fo"]["a"].value;
+var y=document.getElementById("g").value;
+var xy=document.getElementById("gd").value;
+var x=document.getElementById("l").value;
+
+var atposition=x.indexOf("@");  
+var dotposition=x.lastIndexOf(".");  
+
+if(h=="")
+{
+alert("wrong input");
+return false;
+}
+else if (y.length<10||y.length>10)
+{
+alert("phone wrong");
+return false;
+}
+else if(xy.length<6||xy.length>8)
+{
+alert("wrong name length"); 
+return false;
+}
+
+else if (atposition<1 || dotposition<atposition+2 || dotposition+2 >= x.length)
+{  
+  alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
+  return false;  
+  }  
+
+
+else
+{
+return true;
+}
+
+}
+</script>
+</head>
+<body>
+<form name="fo" onsubmit="return rt()" >
+Username:<input type="text" name="a" id="gd" ><br>
+Password:<input type="password" ><br>
+Phone Number:<input type="text"  id="g"><br>
+email id:<input type="text"  id="l"><br>
+<input type="submit" value="submit">
+</form>
+</body>
+</html>
