@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function()
+{
+$("p").click(function()
+{
+$(this).hide();
+});
+});
+</script>
+
+<script>
+$(document).ready(function()
+{
+$("button").click(function()
+{
+$("h1").hide();
+});
+});
+</script>
+
+<script>
+$(document).ready(function()
+{
+$("#one").click(function()
+{
+$("h2").hide();
+});
+$("#two").click(function()
+{
+$("h2").show();
+});
+});
+</script>
+
+<p>hide me</p>
+<p>hide me too</p>
+<h1>hide me using button</h1>
+<button>hide</button>
+
+<h2>hide me and show me</h2>
+<input type="button" value="hide me" id="one">
+<input type="button" value="show me" id="two">
+
+</body>
+</html>
