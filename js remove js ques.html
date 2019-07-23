@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+dom
+</title>
+<script>
+function run()
+{
+var element=document.getElementById("remove").value;
+   var para=document.getElementById("cd");
+   var child=document.getElementById(element);
+   para.removeChild(child);
+}
+</script>
+</head>
+<body>
+<ol id="cd">
+<li id="c++" >c++</li>
+<li  id="java">java</li> 
+<li  id="network">network</li>
+</ol>
+<form>
+<input type="text box" id="remove"><br><br>
+<input type="button" value="remove" onclick="run()">
+</form>
+
+
+</body>
+</html>
