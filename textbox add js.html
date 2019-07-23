@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>remove</title>
+<script>
+function add()
+{
+var x=document.getElementById("a").value;
+var para=document.createElement("li");
+var node=document.createTextNode(x);
+para.appendChild(node);
+var element=document.getElementById("cd");
+element.appendChild(para);
+}
+</script>
+</head>
+<body>
+<form>
+<input type="text" id="a" >
+<input type="button" value="add" onclick="add()">
+</form>
+<ol id="cd">
+<li>movies</li>
+<li>travel</li>
+</ol>
+</body>
+</html>
