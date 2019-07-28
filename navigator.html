@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+dom
+</title>
+<script>
+function f2()
+{
+var x=navigator.appName;
+document.getElementById("a").innerHTML=x;
+var e=navigator.appCodeName;
+document.getElementById("b").innerHTML=e;
+var f=navigator.appVersion;
+document.getElementById("f").innerHTML=f;
+var g=navigator.cookieEnabled;
+document.getElementById("g").innerHTML=g;
+document.getElementById("h").innerHTML=navigator.onLine;
+document.getElementById("j").innerHTML=navigator.platform;
+document.getElementById("k").innerHTML=navigator.userAgent;
+
+document.getElementById("l").innerHTML=navigator.javaEnabled();
+
+document.getElementById("z").innerHTML=navigator.taintEnabled();
+}
+
+</script>
+</head>
+<body>
+<form>
+<input type="button" value="click" onclick="f2()">
+</form>
+<p id="a"></p>
+<p id="b"></p>
+<p id="f"></p>
+<p id="g"></p>
+<p id="h"></p>
+<p id="j"></p>
+<p id="k"></p>
+<p id="l"></p>
+<p id="z"></p>
+</body>
+</html>
