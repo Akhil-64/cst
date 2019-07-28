@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head><title>date objects</title>
+</head>
+<body>
+
+Click here to see the time in 12-hr format.<br/>
+<button type="button" onclick="f1()">12-hr format</button>
+<p id="id1"></p>
+
+
+<br/>Click here to see the  time in 24-hr format<br/>
+<button type="button"onclick="f2()">24-hr format</button>
+<p id="id2"></p>
+
+
+<br/>Click here to see the  time in 24-hr format extraa<br/>
+<button type="button"onclick="f3()">24-hr format</button>
+<p id="id3"><p id="id4"><p id="id5"></p></p></p>
+
+<br/>Click here to see the  time in 12-hr format extraa<br/>
+<button type="button"onclick="f4()">12-hr format</button>
+<p id="id6"><p id="id7"><p id="id8"></p></p></p>
+<script>
+function f1()
+{
+var d=new Date();
+document.getElementById("id1").innerHTML=d.toLocaleTimeString();
+}
+function f2()
+{
+var d=new Date();
+document.getElementById("id2").innerHTML=d.toTimeString();
+}
+function f3()
+{
+var d=new Date();
+document.getElementById("id3").innerHTML=d.getHours();
+document.getElementById("id4").innerHTML=d.getMinutes();
+document.getElementById("id5").innerHTML=d.getSeconds();
+}
+function f4()
+{
+var d=new Date();
+var n=d.getHours()-12;
+var m=d.getMinutes();
+var l=d.getSeconds();
+document.getElementById("id6").innerHTML=n;
+document.getElementById("id7").innerHTML=m;
+document.getElementById("id8").innerHTML=l;
+}
+</script>
+</body>
+</html>
