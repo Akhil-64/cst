@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>form button</title>
+<script>
+var a=prompt("enter number","0");
+var b=prompt("enter 2nd number","0");
+var c=Number(a);
+var d=Number(b);
+function add()
+{
+document.write(c+d);
+}
+function divide()
+{
+document.write(c/d);
+}
+function subtract()
+{
+document.write(c-d);
+}
+function multiply()
+{
+document.write(c*d);
+}
+</script>
+</head>
+<body>
+<form>
+<input type="button" value="add" onclick="add()"><br>
+<input type="button" value="multiply" onclick="multiply()"><br>
+<input type="button" value="divison" onclick="divide()"><br>
+<input type="button" value="subtract" onclick="subtract()"><br>
+</form>
+</body>
+</html>
